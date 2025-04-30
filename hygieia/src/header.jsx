@@ -1,8 +1,8 @@
-import React from 'react'
-import './header.css'
-import HamburgerMenu from './HamburgerMenu.jsx'
+import React from 'react';
+import './header.css';
+import HamburgerMenu from './HamburgerMenu.jsx';
 import CountrySelector from './CountrySelector.jsx';
-import header from "./header.jsx" 
+import header from "./header.jsx" ;
 
 function Header() {
 

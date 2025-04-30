@@ -1,6 +1,6 @@
 import React from 'react'
-import './header.css'
-import HamburgerMenu from './HamburgerMenu.jsx'
+import './header.css';
+import HamburgerMenu from './HamburgerMenu.jsx';
 
 let name = 'draco'
 

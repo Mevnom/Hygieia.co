@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ReactCountryFlag from "react-country-flag";
 import Select from "react-select";
-import ReactCountryCode from "react-country-code"
 
 
 const countries = [

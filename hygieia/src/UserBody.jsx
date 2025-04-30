@@ -1,15 +1,15 @@
 import React from 'react'
-import './UserBody.css'
-import statsphoto from './assets/statsphoto.png'
-import lightningbolt1 from './assets/lightningbolt1.jpeg'
-import lightningbolt2 from './assets/lightningbolt2.jpeg'
-import lightningbolt3 from './assets/lightningbolt3.jpeg'
-import lightningbolt4 from './assets/lightningbolt4.jpeg'
-import lightningbolt5 from './assets/lightningbolt5.jpeg'
-import lightningbolt6 from './assets/lightningbolt6.jpeg'
-import lightningbolt7 from './assets/lightningbolt7.jpeg'
-import lightningbolt8 from './assets/lightningbolt8.jpeg'
-import lightningbolt9 from './assets/lightningbolt9.jpeg'
+import './UserBody.css';
+import statsphoto from './assets/statsphoto.png';
+import lightningbolt1 from './assets/lightningbolt1.jpeg';
+import lightningbolt2 from './assets/lightningbolt2.jpeg';
+import lightningbolt3 from './assets/lightningbolt3.jpeg';
+import lightningbolt4 from './assets/lightningbolt4.jpeg';
+import lightningbolt5 from './assets/lightningbolt5.jpeg';
+import lightningbolt6 from './assets/lightningbolt6.jpeg';
+import lightningbolt7 from './assets/lightningbolt7.jpeg';
+import lightningbolt8 from './assets/lightningbolt8.jpeg';
+import lightningbolt9 from './assets/lightningbolt9.jpeg';
 
 
 

@@ -35,6 +35,7 @@
     font-size: small;
     width: max-content;
     font-weight: medium;
+    z-index: 1;
   }
 
   

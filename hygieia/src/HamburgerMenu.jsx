@@ -23,9 +23,10 @@ const HamburgerMenu = () => {
       {isOpen && (
         <div className="menu">
           <ul>
-            <li>Product catalogue</li>
+            <li>Product Catalogue</li>
+            <li>Contact</li>
             <li>Subsription</li>
-            <li>contact</li>
+            <li>UI Prototype</li>
           </ul>
         </div>
       )}

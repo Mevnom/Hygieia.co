@@ -1,5 +1,7 @@
 import { useState } from "react";
 import './HamburgerMenu.css';
+import UIprototype from "./pages/UIprototype.jsx"
+import { Link } from "react-router-dom";
 
 const HamburgerMenu = () => {
   // State to manage menu visibility
@@ -25,8 +27,12 @@ const HamburgerMenu = () => {
           <ul>
             <li>Product Catalogue</li>
             <li>Contact</li>
-            <li>Subsription</li>
-            <li>UI Prototype</li>
+            <li>
+              <Link to={'/'} ></Link> Subscription
+              </li>
+            <li>
+              <a href="/UIprototype">UI Prototype</a>
+              </li>
           </ul>
         </div>
       )}

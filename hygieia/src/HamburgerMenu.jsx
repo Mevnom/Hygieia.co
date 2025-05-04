@@ -28,7 +28,7 @@ const HamburgerMenu = () => {
             <li>Product Catalogue</li>
             <li>Contact</li>
             <li>
-              <Link to={'/'} ></Link> Subscription
+               Subscription
               </li>
             <li>
               <a href="/UIprototype">UI Prototype</a>

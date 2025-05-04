@@ -8,6 +8,7 @@ import Select from "react-select";
 import Body from './body-uno.jsx'
 import ProductCatalogue from './ProductCatalogue';
 import HealthFactsSlideshow from './Healthfacts.jsx';
+import Signup from './Signup.jsx';
 /* import Home from './pages/Home.jsx';
 import Products from './pages/Products.jsx';
 import UIprototype from './pages/UIprototype.jsx';
@@ -19,7 +20,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className='container-uno'>
 
 
 {/*       <Router>
@@ -57,6 +58,10 @@ function App() {
       <span>
         <UserBody />
       </span> 
+
+      <span>
+        <Signup />
+      </span>
 
     </div >
   );

@@ -9,6 +9,8 @@ import Body from './body-uno.jsx'
 import ProductCatalogue from './ProductCatalogue';
 import HealthFactsSlideshow from './Healthfacts.jsx';
 import Signup from './Signup.jsx';
+import Contact from './pages/Contact.jsx';
+import Login from './pages/Login.jsx';
 /* import Home from './pages/Home.jsx';
 import Products from './pages/Products.jsx';
 import UIprototype from './pages/UIprototype.jsx';
@@ -61,6 +63,14 @@ function App() {
 
       <span>
         <Signup />
+      </span>
+
+      <span>
+        <Contact />
+      </span>
+
+      <span>
+        <Login />
       </span>
 
     </div >

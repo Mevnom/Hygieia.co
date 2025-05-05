@@ -2,6 +2,11 @@ import React from "react";
 import "./Cart.css";
 
 const Cart = ({ cart }) => {
+
+  const handleClick = () => {
+    alert('This feature will be available soon!');
+  };
+
   return (
     <div className="cart-container">
       <h2 className="cart-heading">Shopping Cart</h2>
@@ -20,7 +25,7 @@ const Cart = ({ cart }) => {
           ))}
         </ul>
       )}
-      <button className="checkout-btn">Proceed to Payment</button>
+      <button className="checkout-btn"  onClick={handleClick}>Proceed to Payment</button>
     </div>
   );
 };

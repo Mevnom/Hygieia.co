@@ -1,6 +1,7 @@
 import React from 'react'
 import './header.css';
 import HamburgerMenu from './HamburgerMenu.jsx';
+import { Link } from 'react-router-dom';
 
 
 const welcomes = [
@@ -34,10 +35,11 @@ function RegisteredUser() {
 
             <div className='username-deux'>
                 {welcomes.map((welcome) => (
-                    <h3 key={welcome.id}> {welcome.greeting} {/* &nbsp; */} <span>{welcome.name}</span> <i class="fa-solid fa-bolt"></i></h3>
+                    <Link to={"/"}><h3 key={welcome.id} className='username-deux'> {welcome.greeting} {/* &nbsp; */} <span className='username-deux'>{welcome.name}</span> <i class="fa-solid fa-bolt"></i></h3></Link>
                 ))}
             </div>
             <span>
+                <HamburgerMenu/>
                 <i class="fa-solid fa-user"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
                 <i class="fa-solid fa-gear"></i>

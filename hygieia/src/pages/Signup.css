@@ -4,7 +4,7 @@
     align-items: center;
     min-height: 100vh;
     background-color: #FAF9F6;
-    padding: 2rem;
+    flex-direction: column;
   }
   
   .signup-form {
@@ -69,6 +69,9 @@
     text-align: center;
     font-size: 0.9rem;
     color: #444;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
   }
   
   .signup-options a {

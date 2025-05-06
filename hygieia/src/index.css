@@ -6,6 +6,8 @@ body {
   padding: 0px;
 }
 
-h1 {
+h3,h1 {
   color: #3a5a40;
+  text-decoration: none;
+
 }

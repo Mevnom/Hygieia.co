@@ -10,7 +10,7 @@ import lightningbolt6 from './assets/lightningbolt6.jpeg';
 import lightningbolt7 from './assets/lightningbolt7.jpeg';
 import lightningbolt8 from './assets/lightningbolt8.jpeg';
 import lightningbolt9 from './assets/lightningbolt9.jpeg';
-import hygieia from './assets/hygieia.png'
+import hygieiaaltern from './assets/hygieiaaltern.png'
 
 
 function UserBody() {
@@ -19,8 +19,8 @@ function UserBody() {
     const fitnessCards = [
         {
             cardName: "stats",
-            backgroundImage: hygieia,
-            bodyImage: statsphoto,
+            backgroundImage: hygieiaaltern,
+            bodyImage: "",
             cardinfo: (
                 <>
                     <span>Activity bar: 10%</span>
@@ -32,8 +32,8 @@ function UserBody() {
         },
         {
             cardName: "assets",
-            backgroundImage: hygieia,
-            bodyImage: statsphoto,
+            backgroundImage: hygieiaaltern,
+            bodyImage: "",
             cardinfo: (
                 <>
                     <span>Accessories: 2</span>
@@ -45,8 +45,8 @@ function UserBody() {
         },
         {
             cardName: "overview",
-            backgroundImage: hygieia,
-            bodyImage: statsphoto,
+            backgroundImage: hygieiaaltern,
+            bodyImage:"" ,
             cardinfo: (
                 <>
                     <span>Activity rank: Platinum 717C</span>
@@ -58,8 +58,8 @@ function UserBody() {
         },
         {
             cardName: "pending",
-            backgroundImage: hygieia,
-            bodyImage: statsphoto,
+            backgroundImage: hygieiaaltern,
+            bodyImage:"" ,
             cardinfo: (
                 <>
                     <span>Steps: 4557 </span>
@@ -79,8 +79,8 @@ function UserBody() {
 
     return (
         <div>
-            <span className='info-dashboard'>
-                <span>
+            <span>
+                <span className='info-dashboard'>
                     {fitnessCards.map((cards) => (
                     <div className="card"
                     key={cards.id}
@@ -88,9 +88,10 @@ function UserBody() {
                         backgroundImage: `url(${cards.backgroundImage})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
+                        isHovered: "blur(30px)",
                     }}
                 >
-                    <img src={cards.bodyImage} alt="stats.png" className='img' />
+                    {/* <img src={cards.bodyImage} alt="stats.png" className='img' /> */}
                     <p className='card-title'>
                         {cards.cardName}
                     </p>
@@ -99,67 +100,6 @@ function UserBody() {
                     </div>
                 </div>
                     ))}
-
-
-                    <div className="card"
-                        style={{
-                            backgroundImage: `url(${lightningbolt9})`,
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                        }}
-                    >
-                        <img src={statsphoto} alt="stats.png" className='img' />
-                        <p className='card-title'>
-                            {cardName = 'stats'}
-                        </p>
-                        <div className="textBox">
-                            <span>Activity bar: 10%</span>
-                            <span>Rank: 52 </span>
-                            <span>Heart rate: 60 </span>
-                            <span>Heart rate: 52 </span>
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        <img src={statsphoto} alt="stats.png" className='img' />
-                        <p className='card-title'>
-                            {cardName = 'overview'}
-                        </p>
-                        <div className="textBox">
-                            <span>Activity bar: 10%</span>
-                            <span>Rank: 52 </span>
-                            <span>Heart rate: 60 </span>
-                            <span>Heart rate: 52 </span>
-                        </div>
-                    </div>
-
-                </span>
-                <span>
-                    <div className="card" >
-                        <img src={statsphoto} alt="stats.png" className='img' />
-                        <p className='card-title'>
-                            {cardName = 'assets'}
-                        </p>
-                        <div className="textBox">
-                            <span>Activity bar: &nbsp; 10% <i class="fa-solid fa-battery-full"></i> </span>
-                            <span>Rank: 52 </span>
-                            <span>Heart rate: 60 </span>
-                            <span>Heart rate: 52 </span>
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        <img src={statsphoto} alt="stats.png" className='img' />
-                        <p className='card-title'>
-                            {cardName = 'Paul'}
-                        </p>
-                        <div className="textBox">
-                            <span>Activity bar: 10%</span>
-                            <span>Rank: 52 </span>
-                            <span>Heart rate: 60 </span>
-                            <span>Heart rate: 52 </span>
-                        </div>
-                    </div>
 
                 </span>
             </span>

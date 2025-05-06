@@ -1,17 +1,17 @@
 import React from 'react';
-import './header.css';
+import './DefaultHeader.css';
 import HamburgerMenu from './HamburgerMenu.jsx';
 import CountrySelector from './CountrySelector.jsx';
 import { Router } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 
-function Header() {
+function DefaultHeader() {
 
     const navigate = useNavigate();
 
     return (
-        <div className='header'>
+        <div className='defaultheader'>
 
             <div>
                 <h2>
@@ -20,11 +20,7 @@ function Header() {
 
             </div>
             <span>
-                 <HamburgerMenu /> 
-                <Link to={"/Signup"}>
-                <button className="button" >Sign up</button>
-                </Link>
-                <CountrySelector />
+                 <HamburgerMenu />
             </span>
 
 
@@ -53,4 +49,4 @@ function Header() {
 
 }
 
-export default Header;
+export default DefaultHeader;

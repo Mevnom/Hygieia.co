@@ -61,6 +61,19 @@
     padding: 15px 16px;
     cursor: pointer;
   }
+
+  .menu ul li button {
+    border: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    color: #3a5a40;
+    background-color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+    
+  }
   
   .menu li:hover {
     background-color: #f0f0f0;

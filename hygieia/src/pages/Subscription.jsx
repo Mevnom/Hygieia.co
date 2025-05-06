@@ -4,7 +4,6 @@ function Subscription(){
     return(
 
 <h1>
-    Subs
 </h1>
 
     

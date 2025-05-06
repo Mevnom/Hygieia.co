@@ -1,3 +1,6 @@
+/* div{
+    text-decoration: none;
+} */
 .header {
     display: flex;
     flex-direction: row;
@@ -14,6 +17,7 @@
     flex-direction: row;
     justify-content: space-around;
     gap: 12px;
+    text-decoration: none;
 }
 
 .header h2 {
@@ -30,21 +34,24 @@
 
 i {
     color: #3a5a40;
+    text-decoration: none;
 }
 
 .username h2 {
     color: black;
     display: flex;
     flex-direction: row;
-    text-decoration: wavy;
+    text-decoration: none;
 }
 
 .header username h2 span {
     color: #3a5a40;
+    text-decoration: none;
 }
 
 .username i {
     margin: auto;
+    text-decoration: none;
 }
 
 .header-deux {
@@ -52,12 +59,15 @@ i {
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 0.5px solid rgb(171, 171, 171);
-    gap: 329px;
+    gap: 315px;
     position: relative;
     background-color: #FAF9F6;
     color: #3a5a40;
     padding: 10px;
+    padding-top:15px ;
+    padding-bottom:15px ;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .header-deux span {
@@ -67,29 +77,40 @@ i {
     justify-content: space-around;
     gap: 12px;
     /* border: #FAF9F6 1px solid; */
+    text-decoration: none;
 }
 
 .header-deux i {
     color: #3a5a40;
     margin: auto;
+    text-decoration: none;
 }
 
+.username-deux{
+    text-decoration: none;
+}
 
 .header-deux username-deux h3 {
     color: #3a5a40;
     display: flex;
     flex-direction: row;
+text-decoration: none;
+}
 
+.header-deux div{
+    text-decoration: none;
 }
 
 .header-deux div h3 span {
     color: #3a5a40;
+    text-decoration: none;
 }
 
 .username-deux h3 {
     display: flex;
     flex-direction: row;
     gap: 7px;
+    text-decoration: none;
 }
 
 .button {
@@ -107,6 +128,7 @@ i {
     font-family: inherit;
     color: var(--color);
     z-index: 1;
+    text-decoration: none;
    }
    
    .button::before, .button::after {

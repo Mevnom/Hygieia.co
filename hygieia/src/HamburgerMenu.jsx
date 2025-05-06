@@ -2,6 +2,8 @@ import { useState } from "react";
 import './HamburgerMenu.css';
 import UIprototype from "./pages/UIprototype.jsx"
 import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 
 const HamburgerMenu = () => {
   // State to manage menu visibility
@@ -11,6 +13,12 @@ const HamburgerMenu = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const alertM = () => {
+    alert('This feature will be available soon!')
+  }
+
+  const navigate = useNavigate();
 
   return (
     <div className="hamburger-menu">
@@ -25,14 +33,18 @@ const HamburgerMenu = () => {
       {isOpen && (
         <div className="menu">
           <ul>
-            <li>Product Catalogue</li>
-            <li>Contact</li>
-            <li>
-               Subscription
-              </li>
-            <li>
-              <a href="/UIprototype">UI Prototype</a>
-              </li>
+            <Link to={"/"}><li>
+              <button > Home </button>
+            </li></Link>
+            <Link to={"/Products"}><li>
+              <button > Product Catalogue </button>
+            </li></Link>
+            <li onClick={alertM}>
+              <button >Subscription</button>
+            </li>
+            <Link to={"/UIprototype"}><li>
+              <button>UI Prototype</button>
+            </li></Link>
           </ul>
         </div>
       )}

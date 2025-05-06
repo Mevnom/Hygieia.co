@@ -20,8 +20,8 @@ const Contact = () => {
 
     return (
         <div className="contact-page">
-            <h2>Contact Us</h2>
-
+            <h1>Contact Us</h1>
+<br />
             <div className="socials">
                 <a href="https://instagram.com/yagboyajumukhtar" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
                 <a href="https://linkedin.com/in/mukhtar-yagboyaju-8255a4304" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
@@ -36,7 +36,7 @@ const Contact = () => {
             </div>
 
             <h2>or</h2>
-
+<br />
             <form ref={form} onSubmit={sendEmail} className="contact-form">
                 <input type="text" name="user_name" placeholder="Your Name" required />
                 <input type="email" name="user_email" placeholder="Your Email" required />

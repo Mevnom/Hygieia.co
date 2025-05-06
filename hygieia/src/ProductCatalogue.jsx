@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaCheckCircle } from "react-icons/fa"; 
+import { FaCheckCircle } from "react-icons/fa";
 import Cart from "./Cart.jsx";
 import "./ProductCatalogue.css";
 import hygieia from "./assets/hygieia.png";
@@ -12,7 +12,7 @@ const products = {
     { id: 3, name: "Draco Wrist Dome", price: 129.99, image: hygieia },
     { id: 4, name: "Men's Hyper 'IV'", price: 49.99, image: hygieia },
     { id: 5, name: "Collection 'I' Neck Band", price: 79.99, image: hygieia },
-    { id: 6, name: "Mod 'V' Head-gear", price: 129.99, image: hygieia},
+    { id: 6, name: "Mod 'V' Head-gear", price: 129.99, image: hygieia },
   ],
   smartWear: [
     { id: 7, name: "Fore-arm Sleeve", price: 123.49, image: hygieia },
@@ -42,11 +42,15 @@ const ProductCatalogue = () => {
     setTimeout(() => setNotification(null), 3000);
   };
 
+  const alertM = () => {
+    alert('Item added! Scroll down to cart')
+  }
+
   return (
     <div className="catalogue-container">
       {/* <h1 className="catalogue-heading"></h1> */}
       {notification && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
@@ -57,7 +61,7 @@ const ProductCatalogue = () => {
       <div className="catalogue-grid">
         {Object.entries(products).map(([category, items]) => (
           <div key={category} className="category-section">
-            <h1><motion.h2 
+            <h1><motion.h2
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
@@ -66,15 +70,15 @@ const ProductCatalogue = () => {
             </motion.h2></h1>
             <div className="product-grid">
               {items.map((product) => (
-                <motion.div 
-                  key={product.id} 
+                <motion.div
+                  key={product.id}
                   className="product-card"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}>
                   <img src={product.image} alt={product.name} className="product-image" />
                   <h3 className="product-name">{product.name}</h3>
                   <p className="product-price">${product.price.toFixed(2)}</p>
-                  <button onClick={() => addToCart(product)} className="add-to-cart-btn">
+                  <button onClick={() => {addToCart(product); alertM(product);} } className="add-to-cart-btn">
                     Add to Cart
                   </button>
                 </motion.div>

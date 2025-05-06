@@ -1,13 +1,20 @@
+import DefaultHeader from "../defaultHeader";
+import ProductCatalogue from "../ProductCatalogue";
+
 function Products(){
 
 
     return(
+<div>
+<span>
+    <DefaultHeader/>
+</span>
+<span>
+    <ProductCatalogue/>
+</span>
 
-<h1>
-Products
-</h1>
 
-    
+</div>  
 );
 }
 

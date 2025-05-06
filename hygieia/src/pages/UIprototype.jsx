@@ -1,13 +1,23 @@
+import Cart from "../Cart";
+import UserBody from "../UserBody";
+import RegisteredUser from "../UserHeader";
 function UIprototype() {
 
 
     return (
         <div>
-            What the hell?
+            <span>
+                <RegisteredUser/>
+            </span>
+            <span>
+                <UserBody/>
+            </span>
+            <span>
+               {/*  <Cart/> */}
+            </span>
+
         </div>
     );
-
-
 }
 
 

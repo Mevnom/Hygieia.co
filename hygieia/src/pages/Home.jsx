@@ -1,11 +1,34 @@
 import React from 'react';
-
+import Header from '../header';
+import HealthFactsSlideshow from '../Healthfacts';
+import Body from '../body-uno';
+import Contact from '../Contact';
 
 
 
 
  function Home() {
-  return <h1>Welcome to the Home Page</h1>;
+  return (
+
+<div>
+<span>
+<Header/>
+</span>
+<span>
+    <HealthFactsSlideshow/>
+</span>
+<span>
+    <Body/>
+</span>
+<span>
+    <Contact/>
+</span>
+
+
+
+</div>
+
+  );
 }
 
 

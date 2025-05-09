@@ -88,4 +88,133 @@
       opacity: 1;
     }
   }
-  
+  /* ===== Responsive Enhancements for Cart Component ===== */
+
+@media (max-width: 1024px) {
+  .cart-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .cart-heading {
+    font-size: 1.6rem;
+  }
+
+  .cart-item-name {
+    font-size: 1rem;
+  }
+
+  .cart-item-price {
+    font-size: 0.95rem;
+  }
+
+  .checkout-btn {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .cart-heading {
+    font-size: 1.4rem;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-image {
+    width: 100%;
+    max-width: 70px;
+    margin-bottom: 8px;
+  }
+
+  .cart-item-name,
+  .cart-item-price {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-container {
+    padding: 10px;
+  }
+
+  .cart-heading {
+    font-size: 1.25rem;
+  }
+
+  .cart-item-name,
+  .cart-item-price {
+    font-size: 0.95rem;
+  }
+
+  .checkout-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* ===== Simulate Hover on Mobile Devices for Checkout Button ===== */
+
+@media (hover: none) and (pointer: coarse) {
+  .checkout-btn {
+    animation: mobile-hover-fake-checkout 1s ease-in forwards;
+  }
+
+  @keyframes mobile-hover-fake-checkout {
+    0% {
+      background-color: #3a5a40;
+      color: #FAF9F6;
+    }
+    100% {
+      background-color: #2e4a30;
+      color: #FAF9F6;
+    }
+  }
+}
+/* ===== Staggered Animation for Cart Items ===== */
+
+.cart-item {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: cart-stagger-fade 0.5s ease forwards;
+}
+
+.cart-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.cart-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.cart-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.cart-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.cart-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+/* Add more if needed */
+
+@keyframes cart-stagger-fade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

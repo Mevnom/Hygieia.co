@@ -1,4 +1,4 @@
-import DefaultHeader from "../defaultHeader";
+import DefaultHeader from "../Hdtrois";
 import ProductCatalogue from "../ProductCatalogue";
 
 function Products(){

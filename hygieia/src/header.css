@@ -1,32 +1,32 @@
 /* div{
     text-decoration: none;
 } */
-.header {
+.hd {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     /* border-bottom: 0.5px solid rgb(171, 171, 171); */
-    gap: 290px;
     position: relative;
     padding: 15px;
 }
 
-.header span {
-    margin: auto;
+.hd span {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 12px;
     text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.header h2 {
+.hd h2 {
     color: #3a5a40;
     margin-left: 0px;
     font-size: large;
 }
 
-.header div h2 a{
+.hd div h2 a{
     text-decoration: none;
     color: #3a5a40;
     width: fit-content;
@@ -44,7 +44,7 @@ i {
     text-decoration: none;
 }
 
-.header username h2 span {
+.hd username h2 span {
     color: #3a5a40;
     text-decoration: none;
 }
@@ -59,8 +59,6 @@ i {
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 0.5px solid rgb(171, 171, 171);
-    gap: 315px;
-    position: relative;
     background-color: #FAF9F6;
     color: #3a5a40;
     padding: 10px;
@@ -71,7 +69,8 @@ i {
 }
 
 .header-deux span {
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -168,4 +167,62 @@ text-decoration: none;
    .button:active {
     filter: brightness(.8);
    }
-   
+   /* ===== Responsive Enhancements for Header and Buttons ===== */
+
+@media (max-width: 768px) {
+    .header,
+/*     .header-deux {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      padding: 10px;
+    } */
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+  }
+    .header span,
+    .header-deux span {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .header h2,
+    .header-deux h3 {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+  
+    .username h2,
+/*     .username-deux h3 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    } */
+  
+    .button {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header,
+    .header-deux {
+      gap: 10px;
+    }
+  
+    .header h2,
+    .header-deux h3 {
+      font-size: medium;
+    }
+  
+    .button {
+      font-size: 0.85rem;
+      padding: 7px 9px;
+    }
+  }
+  

@@ -41,8 +41,8 @@ function RegisteredUser() {
             <span>
                 <HamburgerMenu/>
                 <i class="fa-solid fa-user"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-gear"></i>
+               {/*  <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-gear"></i> */}
             </span>
 
 

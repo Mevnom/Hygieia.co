@@ -48,7 +48,7 @@
   }
   
   .signup-form button {
-    width: 100%;
+    width: 90%;
     padding: 0.75rem;
     background-color: #3a5a40;
     color: white;
@@ -89,5 +89,108 @@
   .contact-link {
     margin-top: 0.75rem;
     font-size: 0.85rem;
+  }/* ===== Responsive Design Enhancements for Signup Page ===== */
+
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 20px;
   }
+
+  .signup-form {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  .signup-form h2 {
+    font-size: 1.8rem;
+  }
+
+  .input-group input {
+    font-size: 0.95rem;
+    padding: 0.7rem 0.4rem;
+  }
+
+  .signup-form button {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+
+  .signup-options {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-form {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .signup-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .input-icon {
+    font-size: 14px;
+    left: 0.6rem;
+  }
+
+  .input-group input {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.3rem;
+  }
+
+  .signup-form button {
+    font-size: 0.9rem;
+    padding: 0.65rem;
+  }
+}
+
+/* ===== Simulate Hover on Mobile Devices ===== */
+
+@media (hover: none) and (pointer: coarse) {
+  .signup-form button {
+    animation: mobile-hover-fake-signup 1s ease-in forwards;
+  }
+
+  @keyframes mobile-hover-fake-signup {
+    0% {
+      background-color: #3a5a40;
+    }
+    100% {
+      background-color: #2e4c35;
+    }
+  }
+}
+/* For signup form responsiveness */
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 1rem;
+  }
+
+  .signup-form {
+    width: 90%;
+  }
+
+  .signup-form h2 {
+    font-size: 1.8rem;
+  }
+
+  .input-group {
+    margin-bottom: 1rem;
+  }
+
+  .signup-form button {
+    padding: 1rem;
+  }
+
+  .signup-options {
+    flex-direction: column;
+  }
+
+  .signup-options a {
+    margin: 0.5rem 0;
+  }
+}
+
   

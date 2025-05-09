@@ -1,5 +1,5 @@
 import React from 'react';
-import './DefaultHeader.css';
+import './Hdtrois.css';
 import HamburgerMenu from './HamburgerMenu.jsx';
 import CountrySelector from './CountrySelector.jsx';
 import { Router } from 'react-router-dom';
@@ -8,10 +8,9 @@ import { Link } from "react-router-dom";
 
 function DefaultHeader() {
 
-    const navigate = useNavigate();
 
     return (
-        <div className='defaultheader'>
+        <div className='dhd'>
 
             <div>
                 <h2>
@@ -19,9 +18,8 @@ function DefaultHeader() {
                 </h2>
 
             </div>
-            <span>
-                 <HamburgerMenu />
-            </span>
+
+            <span><HamburgerMenu /></span>
 
 
 

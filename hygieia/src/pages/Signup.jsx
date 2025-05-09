@@ -3,7 +3,7 @@ import './Signup.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
-import DefaultHeader from '../defaultHeader';
+import DefaultHeader from '../Hdtrois';
 
 function Signup() {
     const [fullName, setFullName] = useState('');
@@ -30,9 +30,10 @@ function Signup() {
     };
 
     return (
-        <div className="signup-container">
-            <DefaultHeader />
+        <div>
+           <span><DefaultHeader /></span> 
             <br />
+            <div className="signup-container">
             <form className="signup-form" onSubmit={handleSignup}>
                 <h2>Create Account</h2>
 
@@ -65,6 +66,7 @@ function Signup() {
                     </span>
                 </div>
             </form>
+            </div>
         </div>
     );
 }

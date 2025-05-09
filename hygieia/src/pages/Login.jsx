@@ -3,7 +3,7 @@ import './LoginPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-import DefaultHeader from '../defaultHeader';
+import DefaultHeader from '../Hdtrois';
 
 const Login = () => {
     const [userID, setUserID] = useState('');
@@ -30,8 +30,8 @@ const Login = () => {
     };
 
     return (
+        <div><DefaultHeader/>
         <div className="login-container">
-            <DefaultHeader />
             <form className="login-form" onSubmit={handleLogin}>
                 <h2>Log In</h2>
 
@@ -47,6 +47,7 @@ const Login = () => {
 
                 <button type="submit">Login</button>
             </form>
+        </div>
         </div>
     );
 };
